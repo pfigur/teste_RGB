@@ -1,0 +1,57 @@
+/*####*/
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    border: none;
+    outline: none;
+    max-width: 100%;
+}
+
+body {background: #e3e3e3;}
+a {text-decoration: none;}
+ul {list-style: none;}
+img {max-width: 100%;}
+
+
+/* CABEÇALHO */
+.cabecalho {
+    width: 100%;
+    float: left;
+}
+.logo {
+    width: 60px;
+    height: 60px;
+    float: left;
+    background: url(../IMG/logo.png) center center/60px no-repeat;
+    font-size: 0%;
+}
+
+#phone {
+    width: auto;
+    margin: 1%;
+    float: right;
+}
+
+#phone ul li {
+    display: inline-block
+}
+#icon {
+    width: 15px;
+    height: 15px;
+    float: left;
+    background: url(../IMG/1phone.png) center center/15px no-repeat;
+    font-size: 0%;
+}
+#ddd {
+    font-size: smaller;
+}
+#phone h1{
+    color: #535353;
+}
+
+hr{
+    border-color:#b3b3b3;
+    box-sizing:border-box;
+    width:100%;  
+  }

@@ -73,8 +73,9 @@ hr {
     grid-template-columns: auto auto auto auto;
     justify-content: center;
     max-width: 800px;
-    margin: auto;
-    
+    margin: auto; 
+    opacity: 1;
+
 }
 
 .miniatura{
@@ -82,9 +83,43 @@ hr {
     height: 300px;
     object-fit: cover;
     margin: 5px;
-
+    overflow: hidden;
 }
 
 @media screen and (max-width: 420px){
     .miniatura{width: 70px; height: 70px;}
+    .modal{min-width: 100%;}
+}
+
+@media screen and (min-width: 420px){
+    .modal{left: 17%;}
+}
+
+/*HOVER*/
+.miniatura:hover {
+    filter: grayscale(100%);
+    transform: scale(1.1);
+}
+
+
+/*MODAL*/
+.modal {
+    position: fixed;
+    top: 4%;
+    right: 0;
+    bottom: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    opacity:1;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+
+#modalWindow {
+    width: 65vw;
+    transform: scale(0.8);
+    transition: all linear .3s;
 }

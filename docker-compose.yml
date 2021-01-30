@@ -32,3 +32,4 @@ phpmyadmin:
     - MYSQL_USER=admin
     - MYSQL_PASSWORD=admin
     - MYSQL_ROOT_PASSWORD=root
+ 

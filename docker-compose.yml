@@ -7,6 +7,9 @@ php:
     - ./www:/var/www/html
   links:
     - db
+  environment:
+    - MYSQL_USER=root
+    - MYSQL_PASS=root
 
 db:
   image: mysql:5.7

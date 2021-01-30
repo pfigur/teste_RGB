@@ -5,12 +5,14 @@ include './view/footer.html';
 
 require 'rb.php';
 
-R::setup('mysql:host=localhost;dbname=teste', 'root', 'root');
+R::setup('mysql:host=localhost;dbname=teste',
+'root',
+'root');
 
-try{
-    $db = new PDO('mysql:host=HOSTNAME;dbname=DB_NAME','USERNAME','PASSWORD');
-} catch(PDOException $e){
-    echo $e->getmessage();
-}
+$a = R::dispense('nova');
+$a->name = 'Pedro';
+print $a;
+
+$as = R::store($a);
 
 ?>

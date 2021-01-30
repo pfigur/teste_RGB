@@ -50,8 +50,41 @@ img {max-width: 100%;}
     color: #535353;
 }
 
-hr{
-    border-color:#b3b3b3;
-    box-sizing:border-box;
-    width:100%;  
-  }
+hr {
+    display: block;
+       position: relative;
+       padding: 0;
+       margin: 8px auto;
+       height: 0;
+       width: 100%;
+       max-height: 0;
+       font-size: 1px;
+       line-height: 0;
+       clear: both;
+       border: none;
+       border-top: 1px solid #aaaaaa;
+       border-bottom: 1px solid #ffffff;
+}
+
+.galeria {
+    height: auto;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    max-width: 800px;
+    margin: auto;
+    
+}
+
+.miniatura{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin: 5px;
+
+}
+
+@media screen and (max-width: 420px){
+    .miniatura{width: 70px; height: 70px;}
+}

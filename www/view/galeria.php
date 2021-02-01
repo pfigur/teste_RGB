@@ -1,6 +1,6 @@
+<img src="" id="modalWindow" class="modal">
 
-<div class="galeria">
-<img src="../IMG/img2.jpg" id="modalWindow" class="modal">
+<div class="galeria" id="fundo">
 
 <?php
 for ($i=1; $i<21; $i++){

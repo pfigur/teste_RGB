@@ -96,8 +96,8 @@ hr {
 }
 
 /*HOVER*/
-.miniatura:hover {
-    filter: grayscale(100%);
+.miniHover:hover {
+    filter: grayscale(100%); /*alterar os dois quando modal ativo*/
     transform: scale(1.1);
 }
 
